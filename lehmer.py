@@ -1,6 +1,5 @@
 from datetime import datetime
 
-
 class Lehmer(object):
 
     time_seed = staticmethod(
@@ -28,3 +27,5 @@ class Lehmer(object):
         r = ((1.0 * seed) / self.M) % self.scope
         from math import modf
         return int(modf(r)[0] * 10000000) % self.scope
+
+
